@@ -30,7 +30,6 @@ header {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #14213D;
     color: #FCA311;
-    display: flexbox;
 }
 
 .second-title {
@@ -46,7 +45,6 @@ header {
 .logo {
     padding-top: 40px;
     padding-bottom: 50px;
-    justify-content: right;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FCA311;
 }
@@ -61,16 +59,13 @@ header {
     width: 120px;
     height: 800px;
     position: fixed;
-    justify-content: center;
     padding-right: 10px;
     padding-left: 15px;
     background-color: #14213D;
 }
 
 .info {
-    justify-content: center;
     padding-left: 110px;
-    flex-direction: column;
 }
 
 .grid {
@@ -116,6 +111,7 @@ a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 10px;
     width: 250px;
+    margin-bottom: 10px;
     display: inline-flex;
     text-align: center;
     flex-direction: column;
@@ -128,8 +124,10 @@ a:hover {
 .card2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.466);
     padding: 10px;
-    height: 150px;
-    width: 800px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     text-align: center;
     color: #ffffff;
     background-color: #14213D;
@@ -171,14 +169,6 @@ a:hover {
     background-color: #E5E5E5;
 }
 
-.bar {
-    width: 200px;
-    content: "";
-    min-height: 30%;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
 .main-card {
     justify-content: center;
     padding: 5px;
@@ -191,28 +181,28 @@ a:hover {
 @media screen and (max-width: 800px) {
     .text {
         width: auto;
-        height: 300px;
+        height: auto;
         margin: 0%;
+    }
+    .info {
+        padding: 0%;
     }
     .box,
     .form,
     .row {
         width: auto;
-        margin-left: 5px;
-    }
-    .card2 {
-        width: auto;
-        height: auto;
-        margin-left: 5px;
-    }
-    .card {
-        margin-left: 3px;
-        margin-bottom: 10px;
     }
     .grid {
         display: block;
         width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
+    }
+    .menu {
+        width: 100%;
+        position: static;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .button {
+        display: inline;
     }
 }
