@@ -58,7 +58,6 @@ header {
 }
 
 .menu {
-    flex: 3;
     width: 120px;
     height: 800px;
     position: fixed;
