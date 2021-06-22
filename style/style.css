@@ -70,10 +70,8 @@ header {
 
 .grid {
     margin-top: 80px;
-    margin-right: 120px;
-    margin-left: 80px;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 22% 22% 25%;
     grid-template-rows: 250px 90px;
     gap: 5em;
     justify-content: center;
@@ -187,14 +185,10 @@ a:hover {
     .info {
         padding: 0%;
     }
-    .box,
-    .form,
-    .row {
-        width: auto;
-    }
     .grid {
         display: block;
         width: auto;
+        margin-left: 60px;
     }
     .menu {
         width: 100%;
